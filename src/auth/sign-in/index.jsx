@@ -1,9 +1,12 @@
 /* eslint-disable no-unused-vars */
+import { SignIn } from '@clerk/clerk-react'
 import React from 'react'
 
 const SignInPage = () => {
   return (
-    <div>SignInPage</div>
+    <div className='flex justify-center my-48 items-center'>
+    <SignIn/>
+  </div>
   )
 }
 
