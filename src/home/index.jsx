@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
 // import Header from "@/components/custom/Header";
-import Header from "@/dashboard/components/custom/Header";
+import Header from "@/components/custom/Header";
 import { UserButton } from "@clerk/clerk-react";
 import { AtomIcon, Edit, Share2 } from "lucide-react";
 import React from "react";
