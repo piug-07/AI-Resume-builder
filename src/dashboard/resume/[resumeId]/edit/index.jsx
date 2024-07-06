@@ -11,17 +11,18 @@ function EditResume() {
     const {resumeId}=useParams();
     const [resumeInfo,setResumeInfo]=useState();
     useEffect(()=>{
-       
-        GetResumeInfo();
+      setResumeInfo(dummy);
+        // GetResumeInfo();
     },[])
 
 
-    const GetResumeInfo=()=>{
-        GlobalApi.GetResumeById(resumeId).then(resp=>{
-          console.log(resp.data.data);
-          setResumeInfo(resp.data.data);
-        })
-    }
+    // const GetResumeInfo=()=>{
+    //     GlobalApi.GetResumeById(resumeId).then(resp=>{
+    //       console.log(resp.data.data);
+    //       // setResumeInfo(resp.data.data);
+    //       setResumeInfo(resp.data.data);
+    //     })
+    // }
 
   return (
     <ResumeInfoContext.Provider value={{resumeInfo,setResumeInfo}}>

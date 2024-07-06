@@ -43,7 +43,7 @@ function AddResume() {
             "/dashboard/resume/" + resp.data.data.documentId + "/edit"
           );
         }
-        console.log("🚀 ~ onCreate ~ data:", resp);
+        // console.log("🚀 ~ onCreate ~ data:", resp);
       },
       (error) => {
         setLoading(false);
@@ -56,7 +56,7 @@ function AddResume() {
         className="p-14 py-24 border 
         items-center flex 
         justify-center bg-secondary
-        rounded-lg h-[280px]
+        rounded-lg h-[330px]
         hover:scale-105 transition-all hover:shadow-md
         cursor-pointer border-dashed"
         onClick={() => setOpenDialog(true)}

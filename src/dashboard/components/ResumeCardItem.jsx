@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Loader2Icon, MoreVertical, Notebook } from "lucide-react";
+import { Eye, Loader2Icon, MoreVertical, Notebook } from "lucide-react";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
@@ -28,7 +28,7 @@ import { toast } from "sonner";
 function ResumeCardItem({ resume, refreshData }) {
   const resumedata = resume;
   //   console.log("🚀 ~ ResumeCardItem ~ resume: piyush", resume.documentId);
-  console.log("🚀 ~ ResumeCardItem ~ resumedata:", resumedata);
+//   console.log("🚀 ~ ResumeCardItem ~ resumedata:", resumedata);
 
   const navigation = useNavigate();
   const [openAlert, setOpenAlert] = useState(false);
@@ -59,7 +59,7 @@ function ResumeCardItem({ resume, refreshData }) {
           className="p-14  bg-gradient-to-b
           from-pink-100 via-purple-200 to-blue-200
         h-[280px] 
-          rounded-t-lg border-t-4
+          rounded-t-lg border-t-4 
         "
           style={{
             borderColor: resumedata?.themeColor,
@@ -75,16 +75,17 @@ function ResumeCardItem({ resume, refreshData }) {
         </div>
       </Link>
       <div
-        className="border p-3 flex justify-between  text-white rounded-b-lg shadow-lg"
+        className="border p-3 flex justify-between  text-white rounded-b-lg shadow-lg "
         style={{
           background: resumedata?.themeColor,
         }}
       >
-        <h2 className="text-sm">{resumedata.title}</h2>
+        <h2 className="text-md text-black">{resumedata.title}</h2>
 
         <DropdownMenu>
           <DropdownMenuTrigger>
-            <MoreVertical className="h-4 w-4 cursor-pointer" />
+            {/* <MoreVertical className="h-4 w-4 cursor-pointer  text-teal-400" /> */}
+            <Eye size={28} strokeWidth={1.5} className=" cursor-pointer  text-teal-500" />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem
