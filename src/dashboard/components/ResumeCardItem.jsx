@@ -51,7 +51,7 @@ function ResumeCardItem({ resume, refreshData }) {
         setLoading(false);
       }
     );
-  };
+  }; 
   return (
     <div className="">
       <Link to={"/dashboard/resume/" + resumedata.documentId + "/edit"}>
