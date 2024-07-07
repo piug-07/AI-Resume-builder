@@ -20,13 +20,16 @@ const formField = {
 };
 function Experience() {
   const [experinceList, setExperinceList] = useState([]);
+  // console.log("🚀 ~ Experience ~ experinceList:", experinceList);
+
   const { resumeInfo, setResumeInfo } = useContext(ResumeInfoContext);
+  // console.log("🚀 ~ Experience ~ resumeInfo:", resumeInfo);
+
   const params = useParams();
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    resumeInfo?.Experience &&
-      setExperinceList(resumeInfo?.Experience);
+    resumeInfo?.experience && setExperinceList(resumeInfo?.experience);
   }, []);
 
   const handleChange = (index, event) => {

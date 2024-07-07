@@ -97,7 +97,6 @@ function RichTextEditor({ onRichTextEditorChange, index, defaultValue }) {
           <Toolbar>
             <BtnBold />
             <BtnItalic />
-
             <BtnUnderline />
             <BtnStrikeThrough />
             <Separator />
