@@ -65,17 +65,17 @@ export default{
         {
             id:1,
             name:'Angular',
-            rating:80,
+            rating:60,
         },
         {
             id:1,
             name:'React',
-            rating:100,
+            rating:95,
         },
         {
             id:1,
             name:'MySql',
-            rating:80,
+            rating:75,
         },
         {
             id:1,
