@@ -28,7 +28,7 @@ import { toast } from "sonner";
 function ResumeCardItem({ resume, refreshData }) {
   const resumedata = resume;
   //   console.log("🚀 ~ ResumeCardItem ~ resume: piyush", resume.documentId);
-//   console.log("🚀 ~ ResumeCardItem ~ resumedata:", resumedata);
+  //   console.log("🚀 ~ ResumeCardItem ~ resumedata:", resumedata);
 
   const navigation = useNavigate();
   const [openAlert, setOpenAlert] = useState(false);
@@ -51,7 +51,7 @@ function ResumeCardItem({ resume, refreshData }) {
         setLoading(false);
       }
     );
-  }; 
+  };
   return (
     <div className="">
       <Link to={"/dashboard/resume/" + resumedata.documentId + "/edit"}>
@@ -85,7 +85,11 @@ function ResumeCardItem({ resume, refreshData }) {
         <DropdownMenu>
           <DropdownMenuTrigger>
             {/* <MoreVertical className="h-4 w-4 cursor-pointer  text-teal-400" /> */}
-            <Eye size={28} strokeWidth={1.5} className=" cursor-pointer  text-teal-500" />
+            <Eye
+              size={28}
+              strokeWidth={1.5}
+              className=" cursor-pointer  text-teal-500"
+            />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem

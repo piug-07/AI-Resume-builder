@@ -30,7 +30,7 @@ function Experience() {
 
   useEffect(() => {
     resumeInfo?.experience && setExperinceList(resumeInfo?.experience);
-  }, []);
+  }, [resumeInfo]);
 
   const handleChange = (index, event) => {
     const newEntries = experinceList.slice();

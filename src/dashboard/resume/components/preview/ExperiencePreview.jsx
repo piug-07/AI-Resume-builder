@@ -3,7 +3,7 @@
 import React from "react";
 
 function ExperiencePreview({ resumeInfo }) {
-  // console.log("🚀 ~ ExperiencePreview ~ resumeInfo:", resumeInfo);
+  console.log("🚀 ~ ExperiencePreview ~ resumeInfo:", resumeInfo);
  
   return (
     <div className="my-6">

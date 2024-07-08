@@ -28,10 +28,12 @@ function SkillsPreview({ resumeInfo }) {
                 className="h-2 flex items-center justify-center"
                 style={{
                   backgroundColor: resumeInfo?.themeColor || "defaultColor",
-                  width: `${skill?.rating || 0}%`,
+                  width: `${(skill?.rating || 0) * 20}%`,
                 }}
               >
-                <span className="text-black text-[10px]">{skill?.rating}%</span>
+                <span className="text-black text-[10px]">
+                  {skill?.rating * 20}%
+                </span>
               </div>
             </div>
           </div>
